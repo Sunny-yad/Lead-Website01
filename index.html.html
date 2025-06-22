@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startup Boost Agency</title>
+  <link rel="stylesheet" href="adil.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <h2 id="welcome">Welcome!</h2>
+
+    <h1>StartupBoost</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Get instant access <span class="underline">to your</span><br><span class="underline">Services</span>.</h2>
+    <p>EVENT COORDINATION BRAND TO TRANSFORM YOUR GATHERINGS INTO TREASURABLE MOMENTS</p>
+    <br />
+    <button class="get-started">Get Started</button>
+  </section>
+
+  <section class="services" id="services">
+    <h2>What We Offer</h2>
+    <div class="service-grid">
+      <div class="service-box">
+        <img src="psychologist-8781628_1280.png" alt="mission" />
+        <h3>Our mission</h3>
+        <p>Provide clear and concise financial advice to make your financial wealth grow.</p>
+      </div>
+      <div class="service-box">
+        <img src="images/work-life-balance-5333802_1280.jpg" alt="values" />
+        <h3>Our values</h3>
+        <p>Improve the work-life balance. Focus on family, not just finances.</p>
+      </div>
+      <div class="service-box">
+        <img src="images/psychologist-8781628_1280.png" alt="team" />
+        <h3>Our team</h3>
+        <p>Young and dynamic creators ready to help you celebrate in style.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Get In Touch</h2>
+    <div class="form-card">
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="tel" name="phone" placeholder="Your Phone Number" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h3>Contact Us</h3>
+    <p>📧 Email: Benjamin72561@outlook.com</p>
+    <p>📞 Phone: </p>
+    <p>🏢 Office: 106 Sherbrooke St, Wolseley, Saskatchewan S0G, Canada</p>
+  </section>
+
+  <footer>
+    © 2025 Startup Boost Agency. All rights reserved.
+  </footer>
+
+  <script src="adil.js"></script>
+  <script>
+  // Get email from URL
+  const params = new URLSearchParams(window.location.search);
+  const email = params.get('email');
+
+  if (email) {
+    console.log("User email:", email); 
+    // You can show it or send it to backend
+    document.getElementById("welcome").innerText = `Welcome, ${email}`;
+  }
+</script>
+
+</body>
+</html>
